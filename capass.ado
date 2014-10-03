@@ -32,22 +32,22 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-program define capass
-    syntax anything(name=0) [, Throw(string) Rc0 Null Fast] 
+program define capass, byable(onecall)
+    syntax anything(name=0) [if] [in] [, Throw(string) Rc0 Null Fast] 
     
     // Maybe a normal assert would be alight?
     if ("`throw'" != "") {
         // Test assertion
-        cap assert `0', `null' `fast'
+        cap assert `0' `if' `in', `null' `fast'
         
         // Let's call the police
         if (_rc != 0) {
             noi di as error "`throw'"
-            assert `0', `rc0' `null' `fast'
+            assert `0' `if' `in', `rc0' `null' `fast'
         }
     }
     // Just assert and leave
-    else assert `0', `rc0' `null' `fast'
+    else assert `0' `if' `in', `rc0' `null' `fast'
 end
 
 ***
