@@ -1,7 +1,7 @@
 Stata package capass
 ====================
 
-Capass is a simple wrapper for Stata's assert command that allows to throw error messages if the assertion evaluates to false. This is especially useful if the assertion is hidden in quietly executed parts of the code or in preserved mode.
+Capass is a simple wrapper for [Stata](http://www.stata.com/)'s built-in [assert](http://www.stata.com/help.cgi?assert) command that allows to throw error messages if the assertion evaluates to false. This is especially useful if the assertion is hidden in quietly executed parts of the code or in preserved mode.
 
 
 ## Use
@@ -39,3 +39,4 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
