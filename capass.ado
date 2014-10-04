@@ -38,7 +38,7 @@ program define capass, byable(onecall)
     // Maybe a normal assert would be alight?
     if ("`throw'" != "") {
         // Test assertion
-        cap assert `0' `if' `in', `null' `fast'
+        cap assert `0' `if' `in', fast
         
         // Let's call the police
         if (_rc != 0) {
