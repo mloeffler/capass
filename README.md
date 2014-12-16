@@ -6,10 +6,9 @@ Capass is a simple wrapper for [Stata](http://www.stata.com/)'s built-in [assert
 
 ## Installation
 
-You can install the latest version of capass via Stata:
+Capass is online on the [SSC archive](https://ideas.repec.org/c/boc/bocode/s457940.html). You can install it by typing:
 
-	. net from https://mloeffler.github.io/stata/
-	. net install capass
+	. ssc install capass
 
 Done.
 
